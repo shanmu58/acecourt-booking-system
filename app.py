@@ -31,6 +31,14 @@ elif st.session_state.step == 2:
     email = st.text_input("Email Address")
     payment_method = st.selectbox("Payment Method", ["Online Banking", "DuitNow QR"])
 
+    if st.button("Confirm Booking"):
+        st.session_state.username = username
+        st.session_state.phone = phone
+        st.session_state.email = email
+        st.session_state.payment_method = payment_method
+        st.session_state.step = 3
+        st.rerun()
+
     if st.button("Back"):
         st.session_state.step = 1
         st.rerun()
