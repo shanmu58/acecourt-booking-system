@@ -32,11 +32,11 @@ elif st.session_state.step == 2:
     payment_method = st.selectbox("Payment Method", ["Online Banking", "DuitNow QR"])
 
     if st.button("Back"):
-        st.session_state.step =1
+        st.session_state.step = 1
         st.rerun()
 
 #STEP 3:Booking Comfirmed
-elif st.session_state.step == 3
+elif st.session_state.step == 3:
         st.header("Confirm Booking"):
         price = st.session_state.duration * 20
 
