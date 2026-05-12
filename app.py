@@ -31,7 +31,13 @@ elif st.session_state.step == 2:
     email = st.text_input("Email Address")
     payment_method = st.selectbox("Payment Method", ["Online Banking", "DuitNow QR"])
 
-    if st.button("Confirm Booking"):
+    if st.button("Back")
+        st.session_state.step =1
+        st.rerun()
+
+#STEP 3:Booking Comfirmed
+elif st.session_state.step == 3
+        st.header("Confirm Booking"):
         price = st.session_state.duration * 20
 
         st.success("Booking Confirmed!")
@@ -48,5 +54,5 @@ elif st.session_state.step == 2:
         st.write(f"Total Price: RM{price}")
 
     if st.button("Back"):
-        st.session_state.step = 1
+        st.session_state.step = 2
         st.rerun()
