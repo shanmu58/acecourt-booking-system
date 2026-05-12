@@ -55,12 +55,12 @@ elif st.session_state.step == 3:
         st.write(f"Court Type: {st.session_state.court_type}")
         st.write(f"Starting Time: {st.session_state.starting_time}")
         st.write(f"Duration: {st.session_state.duration} hour(s)")
-        st.write(f"Username: {username}")
-        st.write(f"Phone Number: {phone}")
-        st.write(f"Email Address: {email}")
-        st.write(f"Payment Method: {payment_method}")
-        st.write(f"Total Price: RM{price}")
+        st.write(f"Username: {st.session_state.username}")
+        st.write(f"Phone Number: {st.session_state.phone}")
+        st.write(f"Email Address: {st.session_state.email}")
+        st.write(f"Payment Method: {st.session_state.payment_method}")
+        st.write(f"Total Price: RM{st.session_state.price}")
 
-    if st.button("Back"):
-        st.session_state.step = 2
+    if st.button("Make Another Booking"):
+        st.session_state.step = 1
         st.rerun()
