@@ -37,7 +37,7 @@ elif st.session_state.step == 2:
 
 #STEP 3:Booking Comfirmed
 elif st.session_state.step == 3:
-        st.header("Confirm Booking"):
+        st.header("Confirm Booking")
         price = st.session_state.duration * 20
 
         st.success("Booking Confirmed!")
